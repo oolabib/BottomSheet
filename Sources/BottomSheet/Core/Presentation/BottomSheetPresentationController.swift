@@ -521,6 +521,9 @@ extension BottomSheetPresentationController: UIViewControllerAnimatedTransitioni
         let containerView = transitionContext.containerView
         if isPresenting {
             containerView.addSubview(destinationView)
+            if let pullBar {
+                containerView.bringSubviewToFront(pullBar)
+            }
 
             destinationView.frame = containerView.bounds
         }
