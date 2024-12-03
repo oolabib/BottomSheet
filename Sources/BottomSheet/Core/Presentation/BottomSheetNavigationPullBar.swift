@@ -17,7 +17,7 @@ public extension BottomSheetPresentationController {
         private let centerView: UIView = {
             let view = UIView()
             view.frame.size = Style.size
-            view.backgroundColor = UIColor.white.withAlphaComponent(0.6)
+            view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
             view.layer.cornerRadius = Style.size.height * 0.5
             return view
         }()
